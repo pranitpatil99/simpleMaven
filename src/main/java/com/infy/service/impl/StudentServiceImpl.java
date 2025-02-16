@@ -7,7 +7,8 @@ import com.infy.service.StudentService;
 
 public class StudentServiceImpl implements StudentService {
 
-	private DataBaseConnection dataBaseConnection = new DataBaseConnection();
+	// manually created and injected databaseConnection bean
+	private DataBaseConnection dataBaseConnection = new DataBaseConnection(); 
 
 	public void save(Student sbean) {
 		StudentEntity entity = new StudentEntity();
